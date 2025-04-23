@@ -37,7 +37,7 @@ ENV NAME World
 
 # Set default command to run the script  ##👉 Tells Docker to run calculator.py using Python when the container starts.
 CMD ["python3", "calculator.py"]
-
+<hr>
 <p align="center">DOCKER IMAGE BUILDING AND RUNNING</p>
 
 After confirming run these command :
