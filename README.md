@@ -37,8 +37,8 @@ ENV NAME World
 
 # Set default command to run the script  ##👉 Tells Docker to run calculator.py using Python when the container starts.
 CMD ["python3", "calculator.py"]
-
----------------------------------------------------------------DOCKER IMAGE BUILDING AND RUNNING------------------------------------------------------------------------------------------------------
+<hr>
+<p align="center">DOCKER IMAGE BUILDING AND RUNNING</p>
 
 After confirming run these command :
 
@@ -63,8 +63,8 @@ username/your_image_name = name (good if you're pushing to Docker Hub)
 your_image_name = name of the image you want to run
 
 🧠 Use case: Starts your Python app or script inside a container.
-
----------------------------------------------------------------DOCKER IMAGE PUSHING------------------------------------------------------------------------------------------------------
+<hr>
+<p align="center">DOCKER IMAGE PUSHING</p>
 3.) 📤 docker push username/your_image_name
 👉 Pushes your image to Docker Hub (your online Docker registry).
 
@@ -75,8 +75,8 @@ Your image must be tagged correctly with your Docker Hub username.
 
 4.) 📥 docker pull username/image_name
 👉 Downloads (pulls) an image from Docker Hub to your local system.
-
----------------------------------------------------------------DOCKER IMAGE CLEANING------------------------------------------------------------------------------------------------------
+<hr>
+<p align="center">DOCKER IMAGE CLEANING</p>
 🚀 Clean up your Docker environment like a pro! 🌟
 First, take a look at the mess — like exploring your cluttered room! 🔍
 
@@ -98,14 +98,14 @@ It will ask if you’re sure — say YES and free up some space!
 Feeling brave? Clean everything! 🔥
 docker rmi $(docker images -q)
 Warning: This will delete ALL local Docker images! 
-
----------------------------------------------------------------DOCKER MULTISTAGE IMAGES ------------------------------------------------------------------------------------------------------
+<hr>
+<p align="center">DOCKER MULTISTAGE IMAGES</p>
 
 ❤️❤️❤️ The main purpose of choosing a golang based applciation to demostrate this example is golang is a statically-typed programming language that does not require a runtime in the traditional sense. Unlike dynamically-typed languages like Python, Ruby, and JavaScript, which rely on a runtime environment to execute their code, Go compiles directly to machine code, which can then be executed directly by the operating system.
 
 So the real advantage of multi stage docker build and distro less images can be understand with a drastic decrease in the Image size.
-
----------------------------------------------------------------DOCKER BIND MOUNTS AND VOLUMES ------------------------------------------------------------------------------------------------------
+<hr>
+<p align="center">DOCKER BIND MOUNTS AND VOLUMES </p>
 
 
 A container is called ephemeral because:
